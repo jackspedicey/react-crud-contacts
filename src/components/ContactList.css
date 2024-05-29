@@ -1,0 +1,152 @@
+/* src/components/ContactList.css */
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e4e8;
+}
+
+.add-contact {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list {
+    border-style: groove;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-align: center;
+    color: #00796b;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+form input,
+form button {
+    flex: 1;
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #00796b;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #333;
+}
+
+form button {
+    flex: none;
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #004d40;
+}
+
+.contact-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f7f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border: 2px solid #e0e4e8;
+    transition: transform 0.3s ease;
+}
+
+.contact-list li:hover {
+    transform: scale(1.02);
+}
+
+.contact-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #00796b;
+}
+
+.contact-list div {
+    flex: 1;
+}
+
+.contact-list button {
+    margin-left: 15px;
+    padding: 8px 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-list button:first-of-type {
+    background: #ff7043;
+    color: #ffffff;
+}
+
+.contact-list button:first-of-type:hover {
+    background: #e64a19;
+}
+
+.contact-list button:last-of-type {
+    background: #f44336;
+    color: #ffffff;
+}
+
+.contact-list button:last-of-type:hover {
+    background: #d32f2f;
+}
+
+@media (max-width: 600px) {
+    .contact-list li {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-list div {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .contact-list button {
+        margin-left: 0;
+    }
+
+    .contact-list button:first-of-type {
+        margin-bottom: 10px;
+    }
+}
